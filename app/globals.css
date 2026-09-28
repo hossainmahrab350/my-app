@@ -1,0 +1,4210 @@
+
+.navbar {
+  width: 100%;
+  background: #050706;
+  border-bottom: 1px solid #252b28;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  height: 70px;
+
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: white;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.logo-icon {
+  color: #b7ff00;
+  font-size: 18px;
+}
+
+/* Navigation */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-links a {
+  padding: 8px 16px;
+
+  border-radius: 20px;
+
+  color: #8c948f;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+.nav-links .active {
+  background: #b7ff00;
+  color: #000;
+}
+
+/* Right side */
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #858d89;
+
+  font-size: 11px;
+}
+
+.plan-count,
+.saved-count {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.plan-count {
+  background: #b7ff00;
+  color: #000;
+}
+
+.saved-count {
+  background: #1d2421;
+  color: white;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  max-width: 1200px;
+  min-height: 330px;
+
+  margin: 30px auto 60px;
+  padding: 45px 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  overflow: hidden;
+
+  border: 1px solid #2a3330;
+  border-radius: 12px;
+
+  background: linear-gradient(
+    110deg,
+    #171b27,
+    #25283b
+  );
+}
+
+.hero-content {
+  max-width: 560px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-label {
+  margin-bottom: 15px;
+
+  color: #b7ff00;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  margin: 0;
+
+  color: white;
+
+  font-size: 55px;
+  line-height: 0.95;
+
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.hero-description {
+  max-width: 500px;
+
+  margin-top: 20px;
+
+  color: #aeb5b2;
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.hero-button {
+  margin-top: 23px;
+
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 5px;
+
+  background: #b7ff00;
+
+  color: #000;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.hero-button:hover {
+  background: white;
+  transform: translateY(-2px);
+}
+
+.hero-image {
+  position: relative;
+
+  width: 360px;
+  height: 280px;
+
+  flex-shrink: 0;
+}
+
+.hero-image img {
+  object-fit: contain;
+}
+
+body {
+  margin: 0;
+  background: #050706;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* =========================
+   WORKOUT LIBRARY
+========================= */
+
+.workout-library {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 24px;
+}
+
+.library-heading {
+  margin-bottom: 28px;
+}
+
+.library-heading p {
+  margin: 0 0 8px;
+  color: #b8ff00;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.library-heading h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.library-heading span {
+  display: block;
+  margin-top: 8px;
+  color: #8f9692;
+  font-size: 14px;
+}
+
+/* Grid */
+
+.workout-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+
+.workout-card {
+  overflow: hidden;
+  background: #111614;
+  border: 1px solid #292f2c;
+  border-radius: 14px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.workout-card:hover {
+  transform: translateY(-5px);
+  border-color: #b8ff00;
+}
+
+/* Image */
+
+.workout-image {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  background: #1a1d1b;
+}
+
+.workout-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Content */
+
+.workout-content {
+  padding: 16px;
+}
+
+/* Tags */
+
+.workout-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.workout-tags span {
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: #b8ff00;
+  color: #081000;
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* Title */
+
+.workout-content h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+/* Equipment */
+
+.workout-type {
+  margin: 6px 0 18px;
+  color: #8f9692;
+  font-size: 12px;
+}
+
+/* Stats */
+
+.workout-stats {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #292f2c;
+  color: #b8bfbb;
+  font-size: 11px;
+}
+
+.workout-stats span {
+  white-space: nowrap;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .workout-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .workout-library {
+    margin: 50px auto;
+    padding: 0 16px;
+  }
+
+  .library-heading h2 {
+    font-size: 26px;
+  }
+
+  .workout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .workout-image {
+    height: 220px;
+  }
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  width: 100%;
+  margin-top: 80px;
+  padding: 28px 5%;
+  border-top: 1px solid #29302d;
+  background: #080b0a;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.footer-logo span {
+  color: #b8ff00;
+  font-size: 18px;
+}
+
+.footer p {
+  margin: 0;
+  color: #8f9692;
+  font-size: 11px;
+  text-align: right;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 16px;
+  }
+
+  .footer p {
+    text-align: left;
+    font-size: 10px;
+  }
+}
+
+
+/* ================================
+   WORKOUT DETAILS PAGE
+================================ */
+
+.workout-details {
+  width: 100%;
+  padding: 55px 6% 80px;
+}
+
+.details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+
+  align-items: start;
+}
+
+/* IMAGE */
+
+.details-image {
+  width: 100%;
+  height: 620px;
+
+  overflow: hidden;
+  border-radius: 14px;
+
+  background: #111614;
+}
+
+.details-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  display: block;
+}
+
+
+/* CONTENT */
+
+.details-content {
+  padding-top: 5px;
+}
+
+.details-content h1 {
+  margin: 0 0 15px;
+
+  color: #ffffff;
+
+  font-size: 42px;
+  line-height: 1.05;
+  font-weight: 900;
+}
+
+
+/* DESCRIPTION */
+
+.details-description {
+  margin: 0 0 20px;
+
+  color: #b7beb9;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* TAGS */
+
+.details-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-bottom: 25px;
+}
+
+.details-tags span {
+  padding: 7px 14px;
+
+  border-radius: 999px;
+
+  background: #b7ff00;
+
+  color: #091000;
+
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+
+/* INFORMATION BOX */
+
+.details-info {
+  overflow: hidden;
+
+  border: 1px solid #27302c;
+  border-radius: 14px;
+
+  background: #101a1d;
+}
+
+.info-row {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 20px;
+
+  border-bottom: 1px solid #27302c;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-row span {
+  color: #9ba49f;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.info-row strong {
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-align: right;
+}
+
+
+/* INSTRUCTIONS */
+
+.instructions {
+  margin-top: 30px;
+}
+
+.instructions h2 {
+  margin: 0 0 18px;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.instructions ol {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.instructions li {
+  margin-bottom: 12px;
+
+  color: #c4cbc7;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* BUTTONS */
+
+.details-buttons {
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 30px;
+}
+
+.plan-button,
+.save-button {
+  padding: 13px 20px;
+
+  border-radius: 8px;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.plan-button {
+  border: none;
+
+  background: #b7ff00;
+  color: #081000;
+}
+
+.plan-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(183, 255, 0, 0.2);
+}
+
+.save-button {
+  border: 1px solid #50605a;
+
+  background: transparent;
+  color: #ffffff;
+}
+
+.save-button:hover {
+  border-color: #b7ff00;
+  color: #b7ff00;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+  .workout-details {
+    padding: 40px 5% 60px;
+  }
+
+  .details-container {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .details-image {
+    height: 500px;
+  }
+
+  .details-content h1 {
+    font-size: 36px;
+  }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+  .workout-details {
+    padding: 30px 18px 50px;
+  }
+
+  .details-container {
+    gap: 28px;
+  }
+
+  .details-image {
+    height: 380px;
+    border-radius: 10px;
+  }
+
+  .details-content h1 {
+    font-size: 30px;
+  }
+
+  .details-description {
+    font-size: 14px;
+  }
+
+  .info-row {
+    padding: 14px 15px;
+  }
+
+  .details-buttons {
+    flex-direction: column;
+  }
+
+  .plan-button,
+  .save-button {
+    width: 100%;
+  }
+}
+
+.workout-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.workout-card-link:hover {
+  text-decoration: none;
+}
+
+.workout-card {
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.workout-card-link:hover .workout-card {
+  transform: translateY(-5px);
+}
+
+/* =========================
+   WORKOUT CARD
+========================= */
+
+.workout-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.workout-card-link:hover {
+  text-decoration: none;
+}
+
+.workout-card {
+  overflow: hidden;
+  background: #07100d;
+  border: 1px solid #29302d;
+  border-radius: 14px;
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.workout-card-link:hover .workout-card {
+  transform: translateY(-5px);
+  border-color: #b7ff00;
+}
+
+
+/* =========================
+   WORKOUT IMAGE
+========================= */
+
+.workout-image {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+}
+
+.workout-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+  transition: transform 0.3s ease;
+}
+
+.workout-card-link:hover .workout-image img {
+  transform: scale(1.03);
+}
+
+
+/* =========================
+   WORKOUT CONTENT
+========================= */
+
+.workout-content {
+  padding: 16px;
+}
+
+
+/* =========================
+   TAGS
+========================= */
+
+.workout-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.workout-tags span {
+  padding: 5px 10px;
+  border-radius: 999px;
+
+  background: #b7ff00;
+  color: #071000;
+
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.workout-content h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+
+/* =========================
+   EQUIPMENT
+========================= */
+
+.workout-type {
+  margin-top: 6px;
+  margin-bottom: 18px;
+
+  color: #8c9590;
+
+  font-size: 11px;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.workout-stats {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  padding-top: 12px;
+
+  border-top: 1px solid #303633;
+
+  color: #b4bcb7;
+
+  font-size: 10px;
+}
+
+
+/* =========================
+   WORKOUT GRID
+========================= */
+
+.workout-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+
+  margin-top: 28px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .workout-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .workout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .workout-image {
+    height: 210px;
+  }
+
+  .workout-content h3 {
+    font-size: 16px;
+  }
+
+  .workout-stats {
+    gap: 8px;
+  }
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  width: 100%;
+  height: 76px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #101010;
+  border-bottom: 1px solid #292929;
+}
+
+/* Logo */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: white;
+  text-decoration: none;
+
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.navbar-logo img {
+  object-fit: contain;
+}
+
+/* Center navigation */
+
+.navbar-center {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.nav-link {
+  padding: 10px 18px;
+
+  color: white;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  border-radius: 999px;
+
+  transition: 0.2s ease;
+}
+
+.nav-link:hover {
+  background: #b7ff00;
+  color: #101010;
+}
+
+/* Right side */
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  color: white;
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.nav-count {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #b7ff00;
+  color: #101010;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.nav-status:last-child .nav-count {
+  background: #303633;
+  color: white;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .navbar {
+    height: auto;
+    min-height: 70px;
+    padding: 14px 5%;
+
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .navbar-center {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar-right {
+    gap: 10px;
+  }
+
+  .navbar-logo span {
+    font-size: 15px;
+  }
+
+  .nav-link {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .nav-status {
+    font-size: 11px;
+  }
+}
+
+/* =========================
+   MY PLAN PAGE
+========================= */
+
+.plan-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 55px 24px 80px;
+}
+
+/* Header */
+
+.plan-header {
+  margin-bottom: 28px;
+}
+
+.section-label {
+  margin: 0 0 8px;
+  color: #b7ff00;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.plan-header h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.plan-subtitle {
+  margin-top: 12px;
+  color: #a6ada8;
+  font-size: 14px;
+}
+
+/* Statistics */
+
+.plan-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  background: linear-gradient(
+    135deg,
+    #41476e,
+    #2c344f
+  );
+
+  border: 1px solid #626a91;
+  border-radius: 16px;
+
+  padding: 28px 30px;
+
+  margin-bottom: 26px;
+}
+
+.stat-item {
+  padding: 0 30px;
+  border-right: 1px solid #68708f;
+}
+
+.stat-item:first-child {
+  padding-left: 0;
+}
+
+.stat-item:last-child {
+  border-right: none;
+}
+
+.stat-item span {
+  display: block;
+  color: #d0d3dc;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.stat-item strong {
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.stat-item:first-child strong {
+  color: #b7ff00;
+}
+
+/* Controls */
+
+.plan-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 16px;
+}
+
+.plan-tabs {
+  display: flex;
+  padding: 3px;
+
+  background: #30374f;
+  border: 1px solid #59617b;
+
+  border-radius: 10px;
+}
+
+.plan-tabs button {
+  border: none;
+  background: transparent;
+
+  color: #c5c9d1;
+
+  padding: 9px 16px;
+
+  border-radius: 7px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.plan-tabs button.active {
+  background: #ffffff;
+  color: #202020;
+}
+
+/* Sort */
+
+.sort-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #aeb4bc;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.sort-control select {
+  background: #30374f;
+  color: #ffffff;
+
+  border: 1px solid #59617b;
+
+  border-radius: 8px;
+
+  padding: 8px 12px;
+
+  font-size: 11px;
+}
+
+/* Empty State */
+
+.plan-empty {
+  min-height: 320px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  border: 1px dashed #555b63;
+  border-radius: 14px;
+
+  background: rgba(20, 22, 22, 0.35);
+}
+
+.plan-empty h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.plan-empty p {
+  margin: 8px 0 18px;
+
+  color: #8e9691;
+
+  font-size: 12px;
+}
+
+.plan-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 11px 20px;
+
+  background: #b7ff00;
+  color: #101010;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 11px;
+  font-weight: 900;
+
+  box-shadow: 0 0 18px rgba(183, 255, 0, 0.25);
+
+  transition: 0.2s ease;
+}
+
+.plan-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(183, 255, 0, 0.45);
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .plan-page {
+    padding: 35px 16px 60px;
+  }
+
+  .plan-header h1 {
+    font-size: 32px;
+  }
+
+  .plan-stats {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+
+    padding: 22px;
+  }
+
+  .stat-item {
+    padding: 0 0 18px;
+    border-right: none;
+    border-bottom: 1px solid #68708f;
+  }
+
+  .stat-item:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .plan-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+
+  .sort-control {
+    justify-content: space-between;
+  }
+
+  .plan-empty {
+    min-height: 260px;
+  }
+}
+
+
+/* ========================================
+   MY PLAN PAGE
+======================================== */
+
+.plan-page {
+  width: min(1100px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 70px 0 80px;
+}
+
+/* Header */
+
+.plan-header {
+  margin-bottom: 32px;
+}
+
+.plan-header h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(34px, 5vw, 52px);
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -1.5px;
+}
+
+.section-label {
+  margin: 0 0 12px;
+  color: #b8ff00;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.plan-subtitle {
+  margin: 14px 0 0;
+  color: #a5aaa7;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   STATISTICS BOX
+======================================== */
+
+.plan-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-bottom: 28px;
+
+  padding: 24px 28px;
+
+  background: linear-gradient(
+    135deg,
+    #3c416b,
+    #303551
+  );
+
+  border: 1px solid #676b91;
+  border-radius: 14px;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  padding: 4px 30px;
+}
+
+.stat-item + .stat-item {
+  border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.stat-item span {
+  color: #d1d4dd;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.stat-item strong {
+  color: #b8ff00;
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+
+/* ========================================
+   PLAN CONTROLS
+======================================== */
+
+.plan-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 18px;
+}
+
+.plan-tabs {
+  display: flex;
+  gap: 4px;
+
+  padding: 4px;
+
+  background: #252a38;
+
+  border: 1px solid #43495e;
+  border-radius: 9px;
+}
+
+.plan-tabs button {
+  border: none;
+  border-radius: 6px;
+
+  padding: 8px 18px;
+
+  background: transparent;
+
+  color: #9da3aa;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.plan-tabs .active-tab {
+  background: #e7e8ee;
+  color: #22252b;
+}
+
+
+/* Sort */
+
+.sort-box {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #929995;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.sort-box select {
+  padding: 8px 12px;
+
+  background: #242936;
+
+  border: 1px solid #4a5062;
+  border-radius: 8px;
+
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  outline: none;
+  cursor: pointer;
+}
+
+
+/* ========================================
+   EMPTY PLAN
+======================================== */
+
+.empty-plan {
+  min-height: 310px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 40px;
+
+  border: 1px dashed #535967;
+  border-radius: 14px;
+
+  background: rgba(17, 20, 27, 0.35);
+}
+
+.empty-plan h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+
+.empty-plan p {
+  margin: 10px 0 20px;
+
+  color: #969d99;
+
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+
+/* Green button */
+
+.browse-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 11px 20px;
+
+  background: #b8ff00;
+
+  border-radius: 8px;
+
+  color: #101400;
+
+  font-size: 10px;
+  font-weight: 900;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 0 18px rgba(184, 255, 0, 0.35);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.browse-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 25px rgba(184, 255, 0, 0.55);
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+  .plan-page {
+    width: min(100% - 28px, 1100px);
+    padding: 45px 0 60px;
+  }
+
+  .plan-stats {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+
+    padding: 20px;
+  }
+
+  .stat-item {
+    padding: 0;
+  }
+
+  .stat-item + .stat-item {
+    padding-top: 18px;
+
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .plan-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .plan-tabs {
+    width: fit-content;
+  }
+
+  .sort-box {
+    justify-content: space-between;
+  }
+
+  .empty-plan {
+    min-height: 260px;
+    padding: 25px 15px;
+  }
+}
+
+
+/* =========================================
+   SAVED PAGE
+========================================= */
+
+.saved-page {
+  min-height: 100vh;
+  background: #101512;
+  color: #ffffff;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.saved-container {
+  width: min(1150px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 55px 0 70px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.saved-header {
+  margin-bottom: 32px;
+}
+
+.saved-label {
+  margin: 0 0 10px;
+
+  color: #b8ff00;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.saved-header h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 900;
+
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+
+.saved-description {
+  margin: 16px 0 0;
+
+  max-width: 600px;
+
+  color: #9ca39f;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   CONTROLS
+========================================= */
+
+.saved-controls {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 18px;
+}
+
+
+/* Tabs */
+
+.saved-tabs {
+  display: flex;
+
+  padding: 4px;
+
+  background: #292e42;
+
+  border: 1px solid #555c72;
+
+  border-radius: 9px;
+}
+
+.saved-tabs a {
+  display: block;
+
+  padding: 9px 20px;
+
+  color: #aeb4c1;
+
+  text-decoration: none;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  border-radius: 6px;
+
+  transition: 0.2s ease;
+}
+
+.saved-tabs a:hover {
+  color: #ffffff;
+}
+
+.saved-tabs a.active {
+  background: #eeeeF2;
+
+  color: #24272d;
+}
+
+
+/* =========================================
+   SORT
+========================================= */
+
+.saved-sort {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #9da49f;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.saved-sort select {
+  min-width: 135px;
+
+  padding: 9px 12px;
+
+  background: #252a38;
+
+  color: #ffffff;
+
+  border: 1px solid #4b5265;
+
+  border-radius: 8px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   PLAN + SAVED SHARED DESIGN
+========================================= */
+
+.plan-page {
+  min-height: 100vh;
+  background: #101512;
+  color: white;
+}
+
+
+/* Main width */
+
+.plan-container {
+  width: min(930px, calc(100% - 40px));
+  margin: 0 auto;
+
+  padding: 55px 0 70px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.plan-header {
+  margin-bottom: 30px;
+}
+
+.section-label {
+  margin: 0 0 10px;
+
+  color: #b8ff00;
+
+  font-size: 11px;
+  font-weight: 900;
+
+  letter-spacing: 0.16em;
+}
+
+.plan-header h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(40px, 5vw, 58px);
+
+  font-weight: 900;
+
+  line-height: 1;
+
+  letter-spacing: -0.03em;
+}
+
+.plan-subtitle {
+  margin-top: 14px;
+
+  color: #a5aaa7;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   CONTROLS
+========================================= */
+
+.plan-controls {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 18px;
+}
+
+
+/* =========================================
+   TABS
+========================================= */
+
+.plan-tabs {
+  display: flex;
+
+  padding: 3px;
+
+  background: #30384c;
+
+  border: 1px solid #58617a;
+
+  border-radius: 9px;
+}
+
+.plan-tabs a {
+  padding: 8px 18px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  border-radius: 6px;
+
+  transition: 0.2s ease;
+}
+
+.plan-tabs a.active {
+  background: #f2f2f2;
+
+  color: #25282d;
+}
+
+.plan-tabs a:hover {
+  opacity: 0.9;
+}
+
+
+/* =========================================
+   SORT
+========================================= */
+
+.sort-area {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #a9afaa;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.sort-area select {
+  padding: 8px 12px;
+
+  min-width: 110px;
+
+  background: #30384c;
+
+  color: white;
+
+  border: 1px solid #58617a;
+
+  border-radius: 7px;
+
+  outline: none;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   EMPTY BOX
+========================================= */
+
+.plan-empty {
+  min-height: 300px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  border: 1px dashed #626862;
+
+  border-radius: 10px;
+
+  background: rgba(15, 20, 17, 0.35);
+}
+
+.plan-empty h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 18px;
+
+  font-weight: 900;
+}
+
+.plan-empty p {
+  margin: 10px 0 0;
+
+  color: #929994;
+
+  font-size: 11px;
+}
+
+.plan-empty-button {
+  display: inline-block;
+
+  margin-top: 18px;
+
+  padding: 10px 22px;
+
+  background: #b8ff00;
+
+  color: #071000;
+
+  text-decoration: none;
+
+  border-radius: 7px;
+
+  font-size: 9px;
+
+  font-weight: 900;
+
+  box-shadow: 0 0 20px rgba(184, 255, 0, 0.3);
+
+  transition: 0.2s ease;
+}
+
+.plan-empty-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 0 28px rgba(184, 255, 0, 0.5);
+}
+
+
+/* =========================================
+   SAVED WORKOUT CARDS
+========================================= */
+
+.saved-workout-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+.saved-workout-card {
+  overflow: hidden;
+
+  background: #151a17;
+
+  border: 1px solid #303833;
+
+  border-radius: 10px;
+}
+
+.saved-workout-card img {
+  display: block;
+
+  width: 100%;
+
+  height: 190px;
+
+  object-fit: cover;
+}
+
+.saved-workout-info {
+  padding: 15px;
+}
+
+.saved-workout-tags {
+  display: flex;
+
+  gap: 5px;
+
+  margin-bottom: 9px;
+}
+
+.saved-workout-tags span {
+  padding: 4px 8px;
+
+  background: #b8ff00;
+
+  color: #071000;
+
+  border-radius: 999px;
+
+  font-size: 8px;
+
+  font-weight: 900;
+}
+
+.saved-workout-info h2 {
+  margin: 0;
+
+  font-size: 15px;
+
+  color: white;
+}
+
+.saved-workout-info p {
+  margin: 5px 0 15px;
+
+  color: #929994;
+
+  font-size: 10px;
+}
+
+.saved-workout-stats {
+  display: flex;
+
+  justify-content: space-between;
+
+  padding-top: 11px;
+
+  border-top: 1px solid #303833;
+
+  color: #aeb5b0;
+
+  font-size: 9px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .plan-container {
+    width: calc(100% - 28px);
+
+    padding-top: 40px;
+  }
+
+  .plan-controls {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 14px;
+  }
+
+  .sort-area {
+    justify-content: space-between;
+  }
+
+  .sort-area select {
+    flex: 1;
+  }
+
+  .saved-workout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-empty {
+    min-height: 260px;
+  }
+}
+
+
+/* =========================================================
+   PLAN PAGE
+   ========================================================= */
+
+.plan-page-wrapper {
+  min-height: 100vh;
+  background: #101414;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-page {
+  width: min(100% - 40px, 960px);
+  margin: 0 auto;
+  padding: 58px 0 40px;
+  flex: 1;
+}
+
+/* -------------------------
+   Header
+   ------------------------- */
+
+.plan-header {
+  margin-bottom: 28px;
+}
+
+.section-label {
+  margin: 0 0 10px;
+  color: #baff00;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.plan-header h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(42px, 5vw, 58px);
+  line-height: 0.95;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.plan-subtitle {
+  margin: 16px 0 0;
+  color: #d0d4d1;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* -------------------------
+   Statistics Card
+   ------------------------- */
+
+.plan-stats {
+  width: 100%;
+  min-height: 112px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  background: linear-gradient(
+    135deg,
+    #4e4b86 0%,
+    #6865b0 50%,
+    #514e8c 100%
+  );
+
+  border: 1px solid #7774ad;
+  border-radius: 14px;
+
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.stat-item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 24px 30px;
+}
+
+.stat-item:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+  right: 0;
+  top: 20px;
+  bottom: 20px;
+
+  width: 1px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.stat-item span {
+  margin-bottom: 7px;
+
+  color: #f2f2f2;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.stat-item strong {
+  color: #c7ff00;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+/* -------------------------
+   Controls
+   ------------------------- */
+
+.plan-controls {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 16px;
+}
+
+/* Tabs */
+
+.plan-tabs {
+  display: flex;
+  align-items: center;
+
+  padding: 3px;
+
+  background: #55587d;
+  border: 1px solid #727598;
+  border-radius: 9px;
+
+  overflow: hidden;
+}
+
+.plan-tabs button {
+  border: 0;
+  outline: none;
+
+  padding: 8px 17px;
+
+  background: transparent;
+  color: #e2e3e8;
+
+  border-radius: 6px;
+
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.plan-tabs button.active-tab {
+  background: #f4f4f4;
+  color: #6c6d83;
+}
+
+/* Sort */
+
+.sort-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sort-box span {
+  color: #d7dad8;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.sort-box select {
+  min-width: 82px;
+
+  padding: 7px 10px;
+
+  border: 1px solid #73758f;
+  border-radius: 7px;
+
+  background: #55587d;
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 700;
+
+  outline: none;
+  cursor: pointer;
+}
+
+/* -------------------------
+   Empty State
+   ------------------------- */
+
+.empty-plan {
+  min-height: 235px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  border: 1px dashed rgba(255, 255, 255, 0.45);
+  border-radius: 10px;
+
+  background: rgba(20, 23, 23, 0.45);
+
+  padding: 35px 20px;
+}
+
+.empty-plan h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+.empty-plan p {
+  margin: 8px 0 18px;
+
+  color: #c5c9c6;
+
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.browse-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 32px;
+  padding: 0 18px;
+
+  border-radius: 999px;
+
+  background: #c7ff00;
+  color: #111600;
+
+  text-decoration: none;
+
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+
+  box-shadow: 0 0 18px rgba(199, 255, 0, 0.45);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.browse-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(199, 255, 0, 0.65);
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .plan-page {
+    width: min(100% - 28px, 960px);
+    padding-top: 40px;
+  }
+
+  .plan-header h1 {
+    font-size: 42px;
+  }
+
+  .plan-stats {
+    min-height: 95px;
+  }
+
+  .stat-item {
+    padding: 18px 16px;
+  }
+
+  .stat-item strong {
+    font-size: 24px;
+  }
+
+  .plan-controls {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .sort-box {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 520px) {
+  .plan-page {
+    width: min(100% - 20px, 960px);
+    padding-top: 30px;
+  }
+
+  .plan-header h1 {
+    font-size: 36px;
+  }
+
+  .plan-subtitle {
+    font-size: 12px;
+  }
+
+  .plan-stats {
+    min-height: 90px;
+  }
+
+  .stat-item {
+    padding: 15px 12px;
+  }
+
+  .stat-item span {
+    font-size: 8px;
+  }
+
+  .stat-item strong {
+    font-size: 21px;
+  }
+
+  .plan-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .plan-tabs {
+    width: fit-content;
+  }
+
+  .sort-box {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .empty-plan {
+    min-height: 210px;
+  }
+}
+
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  width: 100%;
+  height: 82px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 7%;
+
+  background: #111614;
+  border-bottom: 1px solid #353b38;
+
+  color: white;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: white;
+  text-decoration: none;
+
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.logo-icon {
+  font-size: 25px;
+}
+
+.navbar-center {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+
+.navbar-center a {
+  color: white;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: 0.2s ease;
+}
+
+.navbar-center a:hover {
+  color: #b7ff00;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  color: white;
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.nav-item:hover {
+  color: #b7ff00;
+}
+
+.nav-count {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #b7ff00;
+  color: #111614;
+
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.saved-count {
+  background: #d4d8d5;
+}
+
+
+/* =========================================
+   PLAN PAGE
+========================================= */
+
+.plan-page-wrapper {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 20% 30%,
+      rgba(75, 110, 75, 0.18),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(60, 100, 70, 0.12),
+      transparent 35%
+    ),
+    #101614;
+
+  color: white;
+}
+
+
+/* Main content */
+
+.plan-page {
+  width: min(1000px, 90%);
+
+  margin: 0 auto;
+
+  padding: 72px 0 70px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.plan-header {
+  margin-bottom: 30px;
+}
+
+.section-label {
+  margin: 0 0 8px;
+
+  color: #b7ff00;
+
+  font-size: 12px;
+  font-weight: 900;
+
+  letter-spacing: 0.15em;
+}
+
+.plan-header h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(48px, 6vw, 72px);
+
+  line-height: 0.95;
+
+  letter-spacing: -0.04em;
+}
+
+.plan-subtitle {
+  margin-top: 18px;
+
+  color: #d0d5d1;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   STATISTICS
+========================================= */
+
+.plan-stats {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-top: 30px;
+
+  padding: 25px 0;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      120deg,
+      #8057ff,
+      #a36cff,
+      #7449f7
+    );
+
+  box-shadow:
+    0 0 25px rgba(130, 80, 255, 0.15);
+}
+
+.stat-item {
+  min-height: 90px;
+
+  padding: 0 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.stat-item:last-child {
+  border-right: none;
+}
+
+.stat-item span {
+  margin-bottom: 10px;
+
+  color: white;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.stat-item strong {
+  color: #dfff00;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 30px;
+}
+
+
+/* =========================================
+   CONTROLS
+========================================= */
+
+.plan-controls {
+  margin-top: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* Tabs */
+
+.plan-tabs {
+  display: flex;
+
+  padding: 3px;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+
+  border-radius: 9px;
+
+  background: #7d5be9;
+}
+
+.plan-tabs button {
+  border: none;
+
+  padding: 9px 18px;
+
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: white;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.plan-tabs .active-tab {
+  background: white;
+  color: #777;
+}
+
+
+/* Sort */
+
+.sort-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sort-box span {
+  color: white;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.sort-box select {
+  padding: 8px 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+
+  border-radius: 8px;
+
+  background: #8061e9;
+
+  color: white;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   EMPTY PLAN
+========================================= */
+
+.empty-plan {
+  min-height: 245px;
+
+  margin-top: 14px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  border: 1px dashed rgba(255, 255, 255, 0.55);
+
+  border-radius: 12px;
+
+  background: rgba(10, 15, 13, 0.35);
+}
+
+.empty-plan h2 {
+  margin: 0;
+
+  color: white;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 20px;
+}
+
+.empty-plan p {
+  margin: 8px 0 18px;
+
+  color: #c4c9c6;
+
+  font-size: 11px;
+}
+
+.browse-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 22px;
+
+  border-radius: 999px;
+
+  background: #c8ff00;
+
+  color: #162000;
+
+  text-decoration: none;
+
+  font-size: 10px;
+  font-weight: 900;
+
+  box-shadow:
+    0 0 10px rgba(200, 255, 0, 0.8),
+    0 0 25px rgba(200, 255, 0, 0.35);
+
+  transition: 0.2s ease;
+}
+
+.browse-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 15px rgba(200, 255, 0, 1),
+    0 0 35px rgba(200, 255, 0, 0.5);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+  .navbar {
+    height: auto;
+
+    padding: 18px 5%;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+  }
+
+  .navbar-logo {
+    font-size: 18px;
+  }
+
+  .navbar-center {
+    order: 3;
+
+    width: 100%;
+
+    justify-content: center;
+
+    gap: 30px;
+  }
+
+  .navbar-right {
+    gap: 10px;
+  }
+
+  .plan-page {
+    width: 90%;
+
+    padding-top: 45px;
+  }
+
+  .plan-stats {
+    grid-template-columns: 1fr;
+
+    padding: 0;
+  }
+
+  .stat-item {
+    min-height: 80px;
+
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  }
+
+  .stat-item:last-child {
+    border-bottom: none;
+  }
+
+  .plan-controls {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .sort-box {
+    width: 100%;
+
+    justify-content: flex-end;
+  }
+}
+
+
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.navbar {
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 7%;
+
+  background: #111614;
+
+  border-bottom: 1px solid #343a36;
+
+  position: relative;
+  z-index: 100;
+}
+
+
+/* LOGO */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.logo-icon {
+  font-size: 23px;
+}
+
+
+/* CENTER */
+
+.navbar-center {
+  display: flex;
+  align-items: center;
+
+  gap: 42px;
+
+  position: absolute;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.navbar-link {
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  padding: 9px 14px;
+
+  border-radius: 999px;
+
+  transition: all 0.2s ease;
+}
+
+.navbar-link:hover {
+  color: #111614;
+
+  background: #b7ff00;
+}
+
+
+/* RIGHT */
+
+.navbar-right {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.nav-counter-link {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  padding: 7px 4px;
+}
+
+.nav-counter-link:hover {
+  color: #b7ff00;
+}
+
+
+/* NUMBER CIRCLE */
+
+.nav-count {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #b7ff00;
+
+  color: #111614;
+
+  font-size: 10px;
+
+  font-weight: 900;
+}
+
+.saved-count {
+  background: #d7dad8;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .navbar {
+    height: auto;
+
+    padding: 18px 5%;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+  }
+
+  .navbar-logo {
+    font-size: 18px;
+  }
+
+  .navbar-center {
+    position: static;
+
+    transform: none;
+
+    order: 3;
+
+    width: 100%;
+
+    justify-content: center;
+
+    gap: 20px;
+  }
+
+  .navbar-right {
+    gap: 8px;
+  }
+
+  .nav-counter-link {
+    font-size: 11px;
+  }
+}
+
+
+/* =========================================
+   PLAN PAGE
+========================================= */
+
+.plan-page-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background: #0b0f0e;
+  color: #ffffff;
+}
+
+
+/* Main content */
+
+.plan-page {
+  width: min(100% - 40px, 1000px);
+  margin: 0 auto;
+
+  padding: 72px 0 80px;
+}
+
+
+/* =========================================
+   PLAN HEADER
+========================================= */
+
+.plan-header {
+  margin-bottom: 28px;
+}
+
+.section-label {
+  margin: 0 0 10px;
+
+  color: #b7ff00;
+
+  font-size: 12px;
+  font-weight: 900;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.plan-header h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(42px, 6vw, 64px);
+
+  line-height: 0.95;
+
+  font-weight: 900;
+
+  letter-spacing: -2px;
+}
+
+.plan-subtitle {
+  margin: 18px 0 0;
+
+  color: #a5aaa7;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   STATISTICS
+========================================= */
+
+.plan-stats {
+  width: 100%;
+
+  min-height: 125px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  align-items: center;
+
+  margin-top: 34px;
+
+  padding: 25px 28px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  border-radius: 14px;
+
+  background:
+    radial-gradient(
+      circle at 20% 50%,
+      rgba(255, 255, 255, 0.15),
+      transparent 35%
+    ),
+    linear-gradient(
+      110deg,
+      #7655e8,
+      #9a55f3,
+      #6d35ed
+    );
+
+  box-shadow:
+    inset 0 0 40px rgba(255, 255, 255, 0.08);
+
+  overflow: hidden;
+}
+
+
+.stat-item {
+  min-height: 70px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 0 28px;
+
+  position: relative;
+}
+
+
+/* Vertical separators */
+
+.stat-item:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  right: 0;
+
+  top: 5px;
+
+  width: 1px;
+
+  height: 60px;
+
+  background: rgba(255, 255, 255, 0.55);
+}
+
+
+.stat-item span {
+  margin-bottom: 8px;
+
+  color: #ffffff;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+
+.stat-item strong {
+  color: #b7ff00;
+
+  font-size: 27px;
+
+  line-height: 1;
+
+  font-weight: 900;
+}
+
+
+/* =========================================
+   PLAN CONTROLS
+========================================= */
+
+.plan-controls {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-top: 22px;
+
+  margin-bottom: 12px;
+}
+
+
+/* Tabs */
+
+.plan-tabs {
+  display: flex;
+
+  align-items: center;
+
+  padding: 3px;
+
+  border-radius: 9px;
+
+  background: #7454d8;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.plan-tabs button {
+  border: none;
+
+  background: transparent;
+
+  color: #ffffff;
+
+  padding: 9px 18px;
+
+  border-radius: 6px;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+
+.plan-tabs button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+
+.plan-tabs .active-tab {
+  background: #ffffff;
+
+  color: #6d54c7;
+}
+
+
+/* =========================================
+   SORT
+========================================= */
+
+.sort-box {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+
+.sort-box span {
+  color: #d5d8d6;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+
+.sort-box select {
+  appearance: none;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+
+  outline: none;
+
+  padding: 8px 30px 8px 12px;
+
+  border-radius: 7px;
+
+  background: #7655d9;
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   EMPTY PLAN
+========================================= */
+
+.empty-plan {
+  width: 100%;
+
+  min-height: 260px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  margin-top: 0;
+
+  padding: 40px 20px;
+
+  border: 1px dashed rgba(255, 255, 255, 0.6);
+
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.01);
+}
+
+
+.empty-plan h2 {
+  margin: 0 0 8px;
+
+  color: #ffffff;
+
+  font-size: 17px;
+
+  font-weight: 900;
+}
+
+
+.empty-plan p {
+  margin: 0 0 20px;
+
+  color: #969d99;
+
+  font-size: 10px;
+}
+
+
+/* =========================================
+   GO TO WORKOUTS BUTTON
+========================================= */
+
+.browse-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-width: 125px;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  background: #b7ff00;
+
+  color: #101500;
+
+  text-decoration: none;
+
+  font-size: 9px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.3px;
+
+  box-shadow:
+    0 0 18px rgba(183, 255, 0, 0.4);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.browse-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 28px rgba(183, 255, 0, 0.65);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.plan-page-wrapper footer {
+  width: 100%;
+
+  margin-top: 0;
+
+  border-top: 1px solid #303633;
+
+  background: #111614;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+  .plan-page {
+    width: min(100% - 32px, 700px);
+
+    padding-top: 55px;
+  }
+
+  .plan-stats {
+    min-height: 110px;
+
+    padding: 20px 15px;
+  }
+
+  .stat-item {
+    padding: 0 15px;
+  }
+
+  .plan-header h1 {
+    font-size: 48px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .plan-page {
+    width: calc(100% - 28px);
+
+    padding: 45px 0 60px;
+  }
+
+
+  .plan-header {
+    margin-bottom: 22px;
+  }
+
+
+  .plan-header h1 {
+    font-size: 40px;
+
+    letter-spacing: -1px;
+  }
+
+
+  .plan-subtitle {
+    font-size: 11px;
+
+    max-width: 320px;
+  }
+
+
+  /* Stack statistics */
+
+  .plan-stats {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+
+    padding: 10px 18px;
+  }
+
+
+  .stat-item {
+    min-height: 70px;
+
+    padding: 12px 5px;
+  }
+
+
+  .stat-item:not(:last-child)::after {
+    display: none;
+  }
+
+
+  .stat-item:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+
+  /* Controls */
+
+  .plan-controls {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 15px;
+  }
+
+
+  .plan-tabs {
+    width: fit-content;
+  }
+
+
+  .sort-box {
+    justify-content: flex-end;
+  }
+
+
+  .empty-plan {
+    min-height: 240px;
+  }
+}
+
+
+/* =====================================================
+   FITLOG - PLAN PAGE
+===================================================== */
+
+.plan-page-wrapper {
+  min-height: 100vh;
+  width: 100%;
+
+  background: #0d1110;
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
+
+.plan-page {
+  width: 100%;
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  padding: 42px 28px 55px;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.plan-header {
+  margin-bottom: 28px;
+}
+
+.section-label {
+  margin: 0 0 8px;
+
+  color: #b7ff00;
+
+  font-size: 11px;
+  font-weight: 900;
+
+  letter-spacing: 0.7px;
+
+  text-transform: uppercase;
+}
+
+.plan-header h1 {
+  margin: 0;
+
+  color: #f7f5ef;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 48px;
+
+  line-height: 1;
+
+  font-weight: 900;
+
+  letter-spacing: -1.8px;
+}
+
+.plan-subtitle {
+  margin: 12px 0 0;
+
+  color: #d0d2cd;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   STATISTICS CARD
+===================================================== */
+
+.plan-stats {
+  width: 100%;
+
+  height: 100px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  align-items: center;
+
+  margin-top: 26px;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  border: 1px solid #68769b;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      105deg,
+      #414d70 0%,
+      #4c587d 45%,
+      #454e70 100%
+    );
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+
+/* Each statistic */
+
+.stat-item {
+  height: 60px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 0 25px;
+
+  position: relative;
+
+  box-sizing: border-box;
+}
+
+
+/* Vertical line */
+
+.stat-item:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  right: 0;
+
+  top: 8px;
+
+  width: 1px;
+
+  height: 44px;
+
+  background: rgba(255, 255, 255, 0.4);
+}
+
+
+.stat-item span {
+  margin-bottom: 6px;
+
+  color: #ffffff;
+
+  font-size: 9px;
+
+  font-weight: 700;
+}
+
+
+.stat-item strong {
+  color: #b7ff00;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 25px;
+
+  line-height: 1;
+
+  font-weight: 900;
+}
+
+
+/* =====================================================
+   CONTROLS
+===================================================== */
+
+.plan-controls {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-top: 20px;
+
+  margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   TABS
+===================================================== */
+
+.plan-tabs {
+  display: flex;
+
+  align-items: center;
+
+  padding: 3px;
+
+  border: 1px solid #68769b;
+
+  border-radius: 9px;
+
+  background: #55648d;
+}
+
+
+.plan-tabs button {
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #ffffff;
+
+  padding: 8px 17px;
+
+  border-radius: 6px;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.plan-tabs button:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+
+.plan-tabs .active-tab {
+  background: #ffffff;
+
+  color: #596681;
+}
+
+
+/* =====================================================
+   SORT
+===================================================== */
+
+.sort-box {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+
+.sort-box span {
+  color: #d5d7d3;
+
+  font-size: 9px;
+
+  font-weight: 700;
+}
+
+
+.sort-box select {
+  min-width: 70px;
+
+  padding: 7px 24px 7px 10px;
+
+  border: 1px solid #7482a4;
+
+  border-radius: 6px;
+
+  outline: none;
+
+  background: #536188;
+
+  color: #ffffff;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.empty-plan {
+  width: 100%;
+
+  min-height: 220px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  box-sizing: border-box;
+
+  padding: 30px;
+
+  border: 1px dashed rgba(255, 255, 255, 0.55);
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.015);
+}
+
+
+.empty-plan h2 {
+  margin: 0 0 8px;
+
+  color: #f5f2e8;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 16px;
+
+  font-weight: 900;
+}
+
+
+.empty-plan p {
+  margin: 0 0 18px;
+
+  color: #a7aaa5;
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   GO TO WORKOUTS
+===================================================== */
+
+.browse-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  height: 30px;
+
+  padding: 0 18px;
+
+  border-radius: 999px;
+
+  background: #b7ff00;
+
+  color: #162000;
+
+  text-decoration: none;
+
+  font-size: 8px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.3px;
+
+  box-shadow:
+    0 0 12px rgba(183, 255, 0, 0.35);
+
+  transition: all 0.2s ease;
+}
+
+
+.browse-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 20px rgba(183, 255, 0, 0.55);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.plan-page-wrapper footer {
+  width: 100%;
+
+  margin-top: 0;
+
+  border-top: 1px solid #2b312e;
+
+  background: #111614;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+
+  .plan-page {
+    max-width: 700px;
+
+    padding: 38px 22px 50px;
+  }
+
+  .plan-header h1 {
+    font-size: 42px;
+  }
+
+  .plan-stats {
+    height: 95px;
+  }
+
+  .stat-item {
+    padding: 0 18px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .plan-page {
+    width: 100%;
+
+    padding: 32px 16px 45px;
+  }
+
+  .plan-header h1 {
+    font-size: 38px;
+
+    letter-spacing: -1px;
+  }
+
+  .plan-subtitle {
+    font-size: 10px;
+  }
+
+  .plan-stats {
+    height: auto;
+
+    grid-template-columns: 1fr;
+
+    padding: 10px 15px;
+  }
+
+  .stat-item {
+    height: 65px;
+
+    padding: 0 8px;
+  }
+
+  .stat-item:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .stat-item:not(:last-child)::after {
+    display: none;
+  }
+
+  .plan-controls {
+    align-items: stretch;
+
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .sort-box {
+    justify-content: flex-end;
+  }
+
+  .empty-plan {
+    min-height: 220px;
+  }
+}
+
+
+.nav-link {
+  color: #f5f5f0;
+  text-decoration: none;
+
+  padding: 7px 14px;
+  border-radius: 999px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+/* Very subtle hover */
+.nav-link:hover {
+  color: #b7ff00;
+  background: rgba(183, 255, 0, 0.06);
+}
+
+/* Active page */
+.nav-link.active {
+  color: #101500;
+  background: #b7ff00;
+}
